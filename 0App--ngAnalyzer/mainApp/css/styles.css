@@ -1,0 +1,85 @@
+
+
+/* ------------------ Bootstrap override ------------------ */
+.container {
+    height:1280px;
+}
+
+.row {
+    margin-top:10px;
+}
+
+.navbar-default {
+    margin-top:15px;
+    border-color:inherit;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: #423A40;
+}
+
+
+.btn {
+    width:100%;
+}
+
+.table-bordered {
+    border: 5px solid #ddd;
+}
+/* ------------------ Angular-charts override ------------------ */
+.tick {
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+svg {
+    width: auto;
+}
+/* ------------------ Regular css ------------------ */
+
+body{
+    background-color: #fff5e1;
+    height: 100%;
+}
+
+
+.background2 {
+    background-color: #bfd7ff;
+}
+
+
+.well {
+    /*background-color: #000000;*/
+}
+
+.myChart {
+    background-color: #000000;
+}
+
+.verticalSpace {
+    margin-bottom:10%;
+}
+
+
+
+.infoHeader {
+    width:90%;
+    margin-bottom: 5%;
+    padding-left: 10px;
+    background-color: #dff0d8;
+
+}
+
+.scrollIt {
+    overflow:scroll;
+    height:250px;
+}
+
+.glass {
+    background-image: url('glass.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}

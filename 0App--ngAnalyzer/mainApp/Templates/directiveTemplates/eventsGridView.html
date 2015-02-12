@@ -1,0 +1,28 @@
+
+
+<div ng-class="{'scrollIt': myGridCtrl.tblHaveDataFlag}">
+
+    <form class="navbar-form navbar-right">
+            <div class="form-group">
+                    <input type=text  class="form-control glass" style="background-position: right; border-color: black;: " ng-model="searchEvents.scopeNum">
+            </div>
+    </form>
+    <table class="table table-striped table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Scope id</th>
+                    <th>Event type</th>
+                    <th>Arguments received</th>
+                </tr>
+                </thead>
+                <tbody>
+                   <tr class="success" ng-repeat="event in myGridCtrl.eventsDataArray | filter:searchEvents" >
+                           <td> {{event.id}} </td>
+                           <td> {{event.scopeNum}} </td>
+                           <td> {{event.eventType}} </td>
+                           <td> {{event.eventArgs}} </td>
+                   </tr>
+                </tbody>
+            </table>
+</div>

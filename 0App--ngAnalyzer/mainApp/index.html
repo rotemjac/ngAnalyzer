@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta http-equiv="content-type" content="text/html; charset=UTF8">
+	<head>
+		<title>AngularJS practice project</title>
+		
+		<!-- It's important that my css file(s) will be after bootstrap-->
+		<link  href="dependencies/css/bootstrap.css" rel="stylesheet">
+		<link  type="text/css" href="css/styles.css" rel="stylesheet">
+				
+		<script type="text/javascript" src="dependencies/js/jquery.min.js"></script>
+		<script type="text/javascript" src="dependencies/js/angular.js"></script>
+        <script type="text/javascript" src="dependencies/js/angular-ui-router/release/angular-ui-router.js"></script>
+		<script type="text/javascript" src="dependencies/js/angular-animate.js"></script>
+		<script type="text/javascript" src="dependencies/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="dependencies/js/ui-bootstrap-tpls-0.11.0.js"></script>	
+
+
+
+        <script src="dependencies/js/Chart.js/Chart.js"></script>
+        <script src="dependencies/js/tc-angular-chartjs/dist/tc-angular-chartjs.js"></script>
+
+        <script src="Modules/modules.js"></script>
+        <!--<script src="Routes/routes.js"></script>-->
+        <script src="Controllers/mainCtrl.js"></script>
+
+        <script src="Directives/ngAnalyzer.js"></script>
+        <script src="Directives/urlLocation.js"></script>
+		<script src="Directives/myChart.js"></script>
+        <script src="Directives/myGridWithNgRepeat.js"></script><!--Instead of myGrid.js-->
+        <script src="Directives/myTabs2.js"></script>
+        <script src="Directives/mainViewDrc.js"></script>
+        <script src="Directives/wrapperForDirectivesTab.js"></script>
+        <script src="Directives/componentSelector.js"></script>
+        <script src="Directives/componentsGrid.js"></script>
+        <script src="Directives/directivesGrid.js"></script>
+        <script src="Directives/smallSelect.js"></script>
+        <script src="Directives/dynamicColumns.js"></script>
+        <script src="Directives/horizontalLine.js"></script>
+
+		<!--<script src="Services/services.js"></script>-->
+        <script src="contentScriptListener.js"></script>
+
+
+    <body ng-app="myApp" ng-csp="">
+
+	<div id="mainContainer" class="container" >
+        <h4>Welcome to ngAnalyzer</h4>
+
+        <ng-analyzer></ng-analyzer>
+
+	</div>
+
+</body>
+
+</html>

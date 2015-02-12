@@ -1,0 +1,54 @@
+
+
+<section class="well">
+
+    <horizontal-line></horizontal-line>
+
+    <url-location></url-location>
+
+    <horizontal-line></horizontal-line>
+
+    <div ng-if= "mainCtrl.currentView == 'Dashboard'">
+
+        <h5>Dashboard</h5>
+
+        <div class="well" style="padding: 5px 5px; background-color:#807F7F">
+
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div class="column col-md-4">
+                        <my-chart type="line" title="Scopes"></my-chart>
+                    </div>
+                    <div class="column col-md-4">
+                        <my-chart type="bar" title="Digest"></my-chart>
+                    </div>
+                    <div class="column col-md-4">
+                        <my-chart type="line" title="Watches"></my-chart>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <horizontal-line></horizontal-line>
+
+        <h5>Events log</h5>
+        <div class="well" style="padding: 5px 5px; background-color:#807F7F">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div class="column col-md-12">
+                        <my-grid></my-grid>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div ng-if= "mainCtrl.currentView == 'Components'"><wrapper-for-directives-tab></wrapper-for-directives-tab></div>
+    <div ng-if= "mainCtrl.currentView == 'About'">About</div>
+</section>
+
+
+

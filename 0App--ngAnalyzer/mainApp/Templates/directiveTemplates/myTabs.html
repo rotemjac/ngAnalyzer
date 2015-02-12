@@ -1,0 +1,42 @@
+
+
+<div>
+    <tabset justified="true">
+        <tab heading = "Modules" ui-sref = "Modules"></tab>
+        <tab heading = "Events"  ui-sref = "Events"></tab>
+        <tab heading = "Scopes"  ui-sref = "Scopes"></tab>
+    </tabset>
+
+    <div ui-view="chosenChart" class="well">
+        <!--View will be injected into here-->
+    </div>
+
+</div>
+
+
+
+<!--/*
+<tabset>
+
+ vertical (Defaults: false) : Whether tabs appear vertically stacked.
+
+ justified (Defaults: false) : Whether tabs fill the container and have a consistent width.
+
+ type (Defaults: 'tabs') : Navigation type. Possible values are 'tabs' and 'pills'.
+
+ <tab>
+
+ heading or <tab-heading> : Heading text or HTML markup.
+
+ active  (Defaults: false) : Whether tab is currently selected.
+
+ disabled  (Defaults: false) : Whether tab is clickable and can be activated.
+
+ select() (Defaults: null) : An optional expression called when tab is activated.
+
+ deselect() (Defaults: null) : An optional expression called when tab is deactivated.
+
+ */
+-->
+
+

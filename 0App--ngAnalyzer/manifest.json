@@ -1,0 +1,38 @@
+{
+    "name": "AngularJS analyzer",
+    "version": "0.1.0",
+    "description": "Extends the Developer Tools, adding tools for debugging and profiling AngularJS applications.",
+    "devtools_page": "devtoolsBackground.html",
+    "options_page": "mainApp/index.html",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["mainApp/dependencies/js/jquery.min.js","contentScript.js"],
+            "run_at": "document_end"
+        }
+    ],
+/*
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+*/
+   "web_accessible_resources": [
+        "mainApp/lib/angularEx.js"
+    ],
+    /*
+    ,
+    "minimum_chrome_version": "21.0.1180.57",
+    "sandbox": {
+        "pages": ["mainApp/index.html"]
+    },*/
+     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+
+}
+
