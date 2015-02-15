@@ -10,8 +10,8 @@
             restrict: 'E',
             replace:true,
             template:
-                    '<div>'+
-                           '<treecontrol class="tree-classic"'+
+                    '<div style="background-color: #555">'+
+                           '<treecontrol class="tree-dark"'+
                                 'tree-model="treeCtrl.treeData"' +
                                 'options="treeCtrl.treeOptions"'+
                                 'on-selection="treeCtrl.showSelected(node)"'+
