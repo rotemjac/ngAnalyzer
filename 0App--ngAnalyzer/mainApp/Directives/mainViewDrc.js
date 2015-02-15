@@ -14,13 +14,9 @@
             restrict: 'E',
             templateUrl: 'templates/directiveTemplates/mainView.html',
             replace: true,
-            controller: function(){
-            },
+            controller: function(){},
             controllerAs: 'vm',
-            require: '^mainViewDrc',
-            link: function postLink(scope,iElement,iAttr,mainViewCtrl) {
-
-            }
+            require: '^mainViewDrc'
         };
 
         return directiveDefinitionObject;

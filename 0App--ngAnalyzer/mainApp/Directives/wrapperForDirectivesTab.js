@@ -9,15 +9,18 @@
         return {
             restrict: 'E',
             replace:true,
-            template:  '<div>' +
-                            '<div>' +
-                                '<component-selector></component-selector>'+
-                                '<components-grid></component-grid>' +
+            template:
+                        '<div class="row clearfix">'+
+                            '<div class="col-md-12 column">'+
+                            '<div class="column col-md-4">'+
+                                '<requires-tree></requires-tree>'+
                             '</div>'+
-                            '<div>'+
-                                '<directives-grid></directives-grid>'+
+                            '<div class="column col-md-8 leftVerticalLine">'+
+                                    '<directives-grid></directives-grid>'+
+                                    '<horizontal-line></horizontal-line>'+
+                                    '<components-grid></component-grid>' +
                             '</div>'+
-                       '</div>'
+                        '</div>'
         }
     };
 

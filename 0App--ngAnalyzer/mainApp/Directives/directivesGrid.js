@@ -13,7 +13,7 @@
                 '<div class="scrollIt">'+
                         '<h4>Directives table</h4>'+
 
-                        '<div style="color: white" ng-show="!directivesGridCtrl.hasDirectivesFlag">'+
+                        '<div style="color: black" ng-show="!directivesGridCtrl.hasDirectivesFlag">'+
                             '<p>This module doesnt contain any directives</p>'+
                         '</div>'+
 

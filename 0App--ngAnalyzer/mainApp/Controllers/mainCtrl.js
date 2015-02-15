@@ -50,22 +50,25 @@
 
         this.directivesTabLogic = {
 
-            getRequiresOfCurrentModule   : getRequiresOfCurrentModule,
-            getComponentsOfCurrentModule : getComponentsOfCurrentModule,
-            getDirectivesOfCurrentModule : getDirectivesOfCurrentModule,
+            getAllRequires                : getAllRequires,
+            getComponentsOfCurrentModule  : getComponentsOfCurrentModule,
+            getDirectivesOfCurrentModule  : getDirectivesOfCurrentModule,
 
-            changeCurrentModule          : changeCurrentModule,
+            changeCurrentModule           : changeCurrentModule,
 
-            informComponentsAndDirectives: informComponentsAndDirectives
+            informComponentsAndDirectives : informComponentsAndDirectives
         };
 
 
-        function getRequiresOfCurrentModule() {
+        function getAllRequires() {
 
             //First of all - set the current components data
 
             var resData = this.getComponentsOfCurrentModule();
 
+            return resData;
+
+            //------------------ Un-reached -------------------- //
             //If there is no data - 'resData' will be undefined
             if (resData) {
                 //If we return the main module we don't wrap it
