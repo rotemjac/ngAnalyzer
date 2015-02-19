@@ -24,7 +24,7 @@
     },
 */
    "web_accessible_resources": [
-        "mainApp/lib/angularEx.js"
+        "mainApp/lib/angularEx.js" , "mainApp/dependencies/js/jquery.min.js"
     ],
     /*
     ,
