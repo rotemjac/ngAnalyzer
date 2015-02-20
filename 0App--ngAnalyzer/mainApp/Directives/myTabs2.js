@@ -29,7 +29,7 @@
                 for (var i=0 ; i<tabsData.length; i++) {
                     elem.append('<li class="navitem"> ' +
                                       '<a ng-click="mainCtrl.changeTab($event)">'  +
-                                            '<span ' +getGlyphiconClass(tabsData[i])+ '/> <span>' + tabsData[i] +'</span>'  +
+                                            '<span ' +getGlyphiconClass(tabsData[i])+ '/><span>' + tabsData[i] +'</span>'  +
                                       '</a>' +
                                 '</li>');
                 }

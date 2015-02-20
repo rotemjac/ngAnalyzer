@@ -14,9 +14,13 @@ nav .navitem {
 	font-size: .85em!important;
 	cursor: pointer;
 }
+nav .navitem .glyphicon {
+	margin-right: 7px;
+}
 
 /* ------------------ Content ------------------ */
 .content {
+	position: relative;
 	padding-top: 14px;
 	margin-left:116px;
 	padding-left: 10px;
