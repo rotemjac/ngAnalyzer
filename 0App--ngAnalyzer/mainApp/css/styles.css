@@ -1,10 +1,37 @@
-
-
-/* ------------------ Bootstrap override ------------------ */
-.container {
-    height:1280px;
+/* ------------------ Navigation / Header ------------------ */
+nav {
+	wudth: 116px;
+	float:left;
+	position: fixed;
 }
 
+.nav-header {
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+nav .navitem {
+	font-size: .85em!important;
+	cursor: pointer;
+}
+
+/* ------------------ Content ------------------ */
+.content {
+	padding-top: 14px;
+	margin-left:116px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+h5 {
+	padding-left: 10px;
+}
+
+legend {
+	font-size: .8em;
+}
+
+/* ------------------ Bootstrap override ------------------ */
 .row {
     margin-top:10px;
 }
@@ -25,9 +52,6 @@
     width:100%;
 }
 
-.table-bordered {
-    border: 5px solid #ddd;
-}
 /* ------------------ Angular-charts override ------------------ */
 .tick {
     cursor: pointer;
@@ -38,25 +62,18 @@
 svg {
     width: auto;
 }
+
 /* ------------------ Regular css ------------------ */
 
-body{
-    background-color: #fff5e1;
-    height: 100%;
+.myChart {
+	color: white!important;
+	width: 100%!important;	
 }
 
+/* ------------------ Regular css ------------------ */
 
 .background2 {
     background-color: #bfd7ff;
-}
-
-
-.well {
-    /*background-color: #000000;*/
-}
-
-.myChart {
-    background-color: #000000;
 }
 
 .verticalSpace {
@@ -86,4 +103,26 @@ body{
 
 .leftVerticalLine {
     border-left: 1px solid rgb(219, 219, 217);
+}
+
+/* ------------------ Search box ------------------ */
+
+.stylish-input-group {
+	position: absolute;
+	width: 255px;
+	right: 15px;
+	top: -40px;	
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
 }
